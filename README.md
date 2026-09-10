@@ -4,7 +4,7 @@ A responsive, single-page wedding invitation website inspired by the uploaded re
 - Maharashtrian + South Indian visual direction
 - Maroon, ivory, muted gold palette
 - Editorial serif typography with traditional details
-- Hero, story, multi-day schedule, gallery, venue/map placeholder, countdown and RSVP
+- Hero, story, wedding schedule, gallery, venue/map placeholder, countdown and RSVP
 - Local SVG photo placeholders ready to replace with real photographs
 
 ## Run locally

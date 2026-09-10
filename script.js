@@ -162,32 +162,6 @@ if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
 }
 
 (function () {
-  const dayNav = document.querySelector(".event-day-nav");
-  if (!dayNav) return;
-
-  const buttons = dayNav.querySelectorAll(".event-day-btn");
-  const groups = document.querySelectorAll(".event-group");
-
-  function showDay(day) {
-    buttons.forEach((btn) => {
-      const active = btn.dataset.day === day;
-      btn.classList.toggle("is-active", active);
-      btn.setAttribute("aria-pressed", active ? "true" : "false");
-    });
-    groups.forEach((group) => {
-      group.classList.toggle("is-active", group.dataset.day === day);
-    });
-  }
-
-  buttons.forEach((btn) => {
-    btn.addEventListener("click", () => showDay(btn.dataset.day));
-  });
-
-  const initial = dayNav.querySelector(".event-day-btn.is-active");
-  showDay(initial ? initial.dataset.day : "15");
-})();
-
-(function () {
   const openBtn = document.getElementById("mapLightboxOpen");
   const lightbox = document.getElementById("mapLightbox");
   const closeBtn = lightbox?.querySelector(".map-lightbox-close");
@@ -629,7 +603,7 @@ if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       "DTSTART;TZID=Asia/Kolkata:20261115T120500",
       "DTEND;TZID=Asia/Kolkata:20261115T130500",
       "SUMMARY:Sarwam & Yashna - Wedding Muhurta",
-      "DESCRIPTION:Wedding muhurta at 12:05 PM. Morning rituals from 8 AM. Reception at 6:30 PM at Samarambh Lawns\\, Thane.",
+      "DESCRIPTION:Wedding muhurta at 12:05 PM. Morning rituals from 8 AM at Samarambh Lawns\\, Thane.",
       "LOCATION:Samarambh Lawns\\, Thane\\, Maharashtra",
       "END:VEVENT",
       "END:VCALENDAR"
